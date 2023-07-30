@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learnify</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- icon -->
+    <link rel="icon" href="./images/logo.png" />
+
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="nav">
+          <img src="./images/logo.png" alt="" />
+          <span>Learnify</span>
+          <ul id="ul_nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#courses_link">Courses</a></li>
+            <li><a href="#about_link">About us</a></li>
+            <li><a href="#contact_us_link">Contact us</a></li>
+          </ul>
+          <button
+            class="open-button myBtn_multi"
+            id="login"
+            onclick="openLoginForm()"
+          >
+            Login
+          </button>
+          <button id="sign_up" class="open-button" onclick="openSignupForm()">
+            Sign up
+          </button>
+        </div>
+        <div class="quote">
+          <div class="quote_txt">
+            <p id="Build">Build your skills</p>
+            <p id="online">online</p>
+            <br /><br />
+            <button onclick="location.href='#courses_link'">
+              Get started Now »
+            </button>
+          </div>
+
+          <div class="quote_img">
+            <img src="./images/person.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="upper_main">
+          <a id="about_link"></a>
+          <h2>Why to join our community?</h2>
+          <p>
+            Learnify is a welcoming and inclusive community where learners can
+            feel comfortable sharing ideas, collaborating with peers, and
+            seeking assistance from instructors. We believe that a supportive
+            learning environment leads to greater success.
+          </p>
+          <div id="content_container">
+            <div class="upper_content" style="grid-area: bk">
+              <img src="./images/book.png" alt="" />
+              <h4>+10 COURSES</h4>
+              <p>
+                Whether you're looking to enhance your professional skills,
+                explore new hobbies, or delve into academic pursuits, we have
+                the perfect course for you.
+              </p>
+            </div>
+            <div class="upper_content" style="grid-area: ex">
+              <img src="./images/expert.png" alt="" />
+              <br />
+              <h4>EXPERT INSTRUCTORS</h4>
+              <p>
+                Our community is home to a team of exceptional instructors who
+                are experts in their respective fields.
+              </p>
+            </div>
+            <div class="upper_content" style="grid-area: tm">
+              <img src="./images/time.png" alt="" />
+              <h4>LIFETIME ACCESS</h4>
+              <p>
+                Life can be busy, and we understand the importance of flexible
+                learning. With our self-paced courses and on-demand content, you
+                can study whenever and wherever it suits you best.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a id="courses_link"></a>
+        <div class="cards_container">
+          <img src="./images/logo.png" alt="" width="85px" height="70px" />
+          <span>Our online courses</span>
+          <div id="cards_container">
+            <div id="cards"></div>
+            <button
+              id="view_all"
+              onclick="window.location.href='./courses.html'"
+            >
+              View all courses
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="contactUs">
+        <div class="contact_img">
+          <img src="./images/person.png" alt="" />
+        </div>
+        <div class="contact_form">
+          <a id="contact_us_link"></a>
+          <h1>Contact us</h1>
+          <form action="index.html">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="Email" />
+            <label for="">Your message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <input id="send" type="submit" value="Send Mail" />
+          </form>
+        </div>
+      </div>
+      <footer class="footer text-center text-white">
+        <div class="social">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        </div>
+        <!-- Copyright -->
+        <div
+          class="text-center text-light p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-light" href="index.html">Learnify.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <div class="form-popup" id="loginForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeLoginForm()">
+          Close
+        </button>
+      </form>
+    </div>
+    <div class="form-popup" id="signupForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Sign up</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+        <label for="user"><b>Username</b></label>
+        <input type="text" name="user" placeholder="Enter Username" required />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn cancel" onclick="closeSignupForm()">
+          Close
+        </button>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript file -->
+    <script src="./js//main.js"></script>
+    <script>
+      function openLoginForm() {
+        document.getElementById("loginForm").style.display = "block";
+      }
+
+      function closeLoginForm() {
+        document.getElementById("loginForm").style.display = "none";
+      }
+      function openSignupForm() {
+        document.getElementById("signupForm").style.display = "block";
+      }
+
+      function closeSignupForm() {
+        document.getElementById("signupForm").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
